@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    
+    <script>
+        function funon(){
+            document.getElementById('myImage').src='bulbon.png';
+        }
+        function funoff(){
+            document.getElementById('myImage').src='bulboff.png';
+        }
+        </script>
+
+</head>
+<body>
+
+    <img style="height: 420px;" id="myImage" src="bulboff.png" />
+    <br>
+
+<button onclick="funon()">Turn on the light</button>
+
+<button onclick="funoff()">Turn off the light</button>
+
+</body>
+</html>
