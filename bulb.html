@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb</title>
-    
+    <style>
+        body{
+            background-color: black;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bulb {
+            display: block;
+        }
+
+        button {
+            margin-left: 56px;
+            margin-top: 56px;
+        }
+    </style>
     <script>
-        function funon(){
-            document.getElementById('myImage').src='bulbon.png';
+        function funon() {
+            document.getElementById('myImage').src = 'bulb-on.png';
         }
-        function funoff(){
-            document.getElementById('myImage').src='bulboff.png';
+        function funoff() {
+            document.getElementById('myImage').src = 'bulb-off.png';
         }
-        </script>
+    </script>
 
 </head>
+
 <body>
+    <div class="container">
+        <div class="bulb">
+            <img style="height: 420px;" id="myImage" src="bulb-off.png" />
+            <br>
 
-    <img style="height: 420px;" id="myImage" src="bulboff.png" />
-    <br>
+            <button onclick="funon()">Turn on the light</button>
 
-<button onclick="funon()">Turn on the light</button>
-
-<button onclick="funoff()">Turn off the light</button>
-
+            <button onclick="funoff()">Turn off the light</button>
+        </div>
+    </div>
 </body>
+
 </html>
